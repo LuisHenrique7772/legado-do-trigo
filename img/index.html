@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head class="espaco lateral">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legado do trigo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <img src="./icone 1.svg" alt="logo do legado do trigo">
+
+            <nav id="menu" class="menu">
+                <a href="#sobre_nós">Sobre nós</a>
+                <a href="#nossas_receitas">Nossas receitas</a>
+                <a href="#Receba_nossos emails">cadastre-se</a>
+            </nav>
+
+            <!-- <nav id="menu" class="menu">
+                <h1>Legado do Trigo</h1>
+                <p>Onde cada grão tem uma lição</p>
+
+            </nav> -->
+            <button id="menu_botao" onclick="abreFechaMenu()">
+
+                <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">!Font Awesome Free
+                    v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free
+                    Copyright 2025 Fonticons, Inc.
+                    <path
+                        d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                </svg>
+
+                <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">!Font Awesome Pro v7.1.0 by
+                    @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial
+                    License) Copyright 2025 Fonticons, Inc.
+                    <path
+                        d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
+                </svg>
+
+            </button>
+        </header>
+        <section id="sobre" class="espacamentoLateral">
+            <div class="titulo">
+
+                <h2>Sobre</h2>
+            </div>
+            <p>Uma padaria de fermentação natural que preza pela tradição e o
+                sabor verdadeiro do pão artesanal. Fundada por um casal, Juca e a
+                Maria que largou a vida corporativa para abrir um negócio e uma
+                escola de panificação, ela é conhecida na vizinhança pelo cheiro de
+                pão fresco que sai pela manhã.</p>
+            <section>
+                <h2> Nossas receitas</h2>
+            </section>
+            <section id="cases">
+
+                <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./foto 1 salgado.svg" class="d-block w-100" alt="Imagem 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./foto 2 salgado.svg" class="d-block w-100" alt="Imagem 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./foto 3 salgado.svg" class="d-block w-100" alt="Imagem 3">
+                        </div>
+                    </div>
+
+                    <!-- Botões de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrossel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#meuCarrossel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+
+                    <!-- Indicadores (bolinhas) -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="1"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="3"></button>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+
+        <section id="contato">
+            <div class="titulo">
+                <span>Entre em contato
+            </div>
+        </section>
+
+        <section id="contato">
+
+
+            <form action="">
+
+                <h2>Receba nossos emails</h2>
+                <div class="campo">
+                    <label for="campo-email">cadastre-se para receber cupons e promoções</label>
+                    <input type="email" id="campo-email" placeholder="Digite seu e-mail..">
+                </div>
+
+                <button type="submit">cadastrar</button>
+            </form>
+        </section>
+        <p>Estabelecimento aberto das 6:00 as 18:30</p>
+        <p>
+            UNIDADE
+            São Caetano do sul\ R. votorantim,311
+            legadodotrigo@gmail.com
+        </p>
+
+        </p>UNIDADE
+            R. Dr. Vicente Giacaglini, 122 - Vila Lucia, São Paulo
+        legadodotrigo@gmail.com
+        </p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
